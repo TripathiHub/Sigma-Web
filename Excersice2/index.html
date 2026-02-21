@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersice 2</title>
+    <style>
+        :root{
+            --bg_darkmode: rgb(22, 5, 89);
+            --color_darkmode: rgb(183, 161, 161);
+            --bg_lightmode: rgb(156, 143, 233);
+            --color_lightmode: rgb(14, 4, 4);
+        ;
+        }
+         ul{
+            margin: 0px;
+            display: flex;
+            list-style-type: none;
+            /* background-color: var(--bg_darkmode);
+            color: var(--color_darkmode); */
+            background-color: var(--bg_lightmode);
+            color: var(--color_lightmode);
+            border: 3px solid black;
+            /* justify-content: end; */
+         }
+         nav{
+            position: sticky;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            border-radius: 8px;
+         }
+         li{
+            padding: 10px;
+         }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="box">
+        <p>Note: Enter lorem4000 in code so that you can see navbar sticky</p>
+    </div>
+</body>
+</html>
