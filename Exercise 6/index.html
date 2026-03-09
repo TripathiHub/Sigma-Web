@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+    <style>
+        .container{
+            display: flex;
+            height: 99vh;
+            width: 700px;
+            background-color: #3f2fbc;
+        }
+        .ball{
+            animation: bounce 7s ease-out 2s 10 forwards alternate ;
+            width: 80px;
+            height: 80px;
+            background-color: #2ab738;
+            border-radius: 50%;
+        }
+        @keyframes bounce {
+              0%{
+                transform: translate(0,0);
+              }
+              10%{
+                transform: translate(120px,500px) scaleX(1.1) scaleY(0.8);
+              }
+              30%{
+                transform: translate(220px,50px);
+              }
+              40%{
+                transform: translate(300px,500px) scaleX(1.1) scaleY(0.8);
+              }
+              50%{
+                transform: translate(380px,100px);
+              }
+              60%{
+                transform: translate(440px,500px) scaleX(1.1) scaleY(0.8);
+              }
+              70%{
+                transform: translate(500px,150px);
+              }
+              80%{
+                transform: translate(540px,500px) scaleX(1.1) scaleY(0.8);
+              }
+              90%{
+                transform: translate(580px,200px);
+              }
+              100%{
+                transform: translate(600px,500px) scaleX(1.1) scaleY(0.8);
+              }
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
