@@ -19,7 +19,7 @@ function changeColor(){
     box.style.color = colors[b];
 })
 }
- setInterval(changeColor,1500);
+ setInterval(changeColor,700);
 // let boxes=document.getElementsByClassName("box");
 // let array=Array.from(boxes);
 // array.forEach(element => {
