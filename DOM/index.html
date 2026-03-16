@@ -2,23 +2,39 @@
 <html>
 <head>
 <title>DOM Practice</title>
+<style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
 </head>
 
 <body>
-
-<h1 id="title">DOM Practice Page</h1>
-
-<p class="para">Paragraph 1</p>
-<p class="para">Paragraph 2</p>
-
-<button id="btn">Click Me</button>
-
-<ul id="list">
-<li>Apple</li>
-<li>Mango</li>
-<li>Banana</li>
-</ul>
-
+ <div class="container">
+     <div class="box">Box</div>
+     <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+ </div>
+ <div class="content">
+    <h1></h1>
+ </div>
 <script src="script.js"></script>
 
 </body>
