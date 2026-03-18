@@ -8,23 +8,93 @@
         .container{
             display: flex;
             margin: 2px;
-            padding: 2px;
             height: 150px;
-            width: 98vw;
-            border: 2px solid black;
+            width: 80vw;
+            border: 1px solid black;
+            border-radius: 5px;
         }
         .thumbimage{
-            width: 120px;
+            width: 300px;
             height: 100%;
-            border: 2px solid black;
+            border: 1px solid black;
+            border-radius: 2px;
+            position: relative;
+        }
+        .thumbnail{
+            height: 100%;
+            width: 100%;
+        }
+        .timebox{
+            right: 5px;
+            bottom: 5px;
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+            position: absolute;
+            align-items: flex-end;
+            height: 20px;
+            width: 50px;
+            border: 1px solid rgb(68, 43, 43);
+            border-radius: 5px;
+        }
+        .textarea{
+            display: flex;
+            width: 750px;
+            flex-direction: column;
+            background-color: rgb(113, 122, 146);
+        }
+        .content{
+         padding-left: 10px;
+         align-content: center;
+         height: 90px;
+         width: 700px;
+         align-items: center;
+        }
+        .timeperiod{
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            margin-left: 10px;
+            bottom: 10px;
+            height: 30px;
+            width: 220px;
+            justify-content: center;
+            align-items: center;
+        }
+        .month{
+           justify-content: center;
+           align-items: center;
+           align-content: center;
+           height: 100%;
+           width: 50%;
+        
+        }
+        .views{
+           justify-content: center;
+           align-items: center;
+           align-content: center;
+           height: 100%;
+           width: 50%;
         }
     </style>
 </head>
 <body>
     <div class="container">
-         <div class="thumimage">
-            
+         <div class="thumbimage">
+            <img src="OIP.webp" alt="img" class="thumbnail">
+            <div class="timebox"> 19:30 </div>
+         </div>
+         <div class="textarea">
+            <div class="content">
+             Malang Song | DHOOM:3 | Aamir Khan, Katrina Kaif | Siddharth Mahadevan, Shilpa Rao, Pritam, Sameer
+             YRF
+            </div>
+            <div class="timeperiod">
+              <div class="month"> 2 months ago</div>
+              <div class="views"> 2m views</div>
+            </div>
          </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
