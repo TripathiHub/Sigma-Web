@@ -1,6 +1,3 @@
-
-
-
 function addcard(contents,timeDuration,ThumbnailUrl,months,views){
     let container = document.createElement('div');
     container.className="container";
