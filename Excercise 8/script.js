@@ -50,9 +50,14 @@ async function hecker5(){
       clearInterval(interval);
 }
 async function bgc() {
-        await new Promise(resolve=>(setTimeout(resolve,300))) 
+        await new Promise(resolve=>(setTimeout(resolve,2000))) 
         document.body.style.backgroundColor="red";
-        document.querySelectorAll(".line").style.hidden
+       let lines= document.querySelectorAll(".line")
+       lines.forEach(e => {
+        e.style.display="none";
+       });
+       document.querySelector(".container").style.color="black";
+       document.querySelector(".container").innerHTML="<h1>Your device is in my control now</h1>";
 }
 async function main(){
     await hecker1();
