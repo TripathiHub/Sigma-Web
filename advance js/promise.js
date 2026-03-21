@@ -58,4 +58,16 @@ let prm3 = new Promise((resolve,reject)=>{
 // }).catch((params) => {
 //     console.log(params);
 // })
-Promise.all(prm1,prm2,prm3);
+let p= Promise.all([prm1,prm2,prm3]);
+let p1= Promise.allSettled([prm1,prm2,prm3]);
+// let p1= Promise.race([prm1,prm2,prm3]);
+p.then((a) => {
+    console.log(a)
+}).catch( (err) => {
+    console.log(err);
+})
+p1.then((a) => {
+    console.log(a)
+}).catch( (err) => {
+    console.log(err);
+})
