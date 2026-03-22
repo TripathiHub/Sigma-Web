@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button">Add Note</button>
+    <div class="container"></div>
+    <script>
+        function saveNoteToLocalStorage(note){
+            if(localStorage.getItem("note")){
+                let note = localStorage.getItem("note");
+                document.querySelector(".container").innerHTML= note;
+             }else{
+                let note = prompt("Enter your note");
+                localStorage.setItem("note",note);
+                document.write(note);
+             }
+        }
+        // if(localStorage.getItem("name")){
+        //         let a = localStorage.getItem("name");
+        //         document.write("Welcome "+ a);
+        //      }else{
+        //         let a = prompt("Enter your name");
+        //         localStorage.setItem("name",a);
+        //         document.write("Welcome "+ a);
+        // }
+    </script>
+</body>
+</html>
+<!-- a ={"harry:1,"rohan":2}
+VM90:1 Uncaught SyntaxError: Unexpected identifier 'rohan'
+
+a ={"harry":1,"rohan":2}
+{harry: 1, rohan: 2}harry: 1rohan: 2[[Prototype]]: Object
+js
+VM104:1 Uncaught ReferenceError: js is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM104:1
+JSON.s
+undefined
+JSON.stringify(a)
+'{"harry":1,"rohan":2}'
+loc
+VM178:1 Uncaught ReferenceError: loc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM178:1
+localStorage.setItem("guys",a)
+undefined
+localStorage.getItem("guys")
+'[object Object]'
+localStorage.setItem("guys",JSON.stringify(a))
+undefined
+localStorage.getItem("guys")
+'{"harry":1,"rohan":2}'
+JSON.parse(lo
+VM361:1 Uncaught SyntaxError: missing ) after argument list
+JSON.parse(localStorage.getItem("guys"))
+{harry: 1, rohan: 2}harry: 1rohan: 2[[Prototype]]: Object -->
