@@ -10,15 +10,17 @@
     <div class="container"></div>
     <script>
         function saveNoteToLocalStorage(note){
+               localStorage.setItem("note",note);
+              }
             if(localStorage.getItem("note")){
                 let note = localStorage.getItem("note");
                 document.querySelector(".container").innerHTML= note;
-             }else{
-                let note = prompt("Enter your note");
-                localStorage.setItem("note",note);
-                document.write(note);
              }
-        }
+                document.querySelector("button").addEventListener("click",function(){
+                let note = prompt("Enter your note");
+                saveNoteToLocalStorage(note);
+                document.querySelector(".container").innerHTML=note;
+             })
         // if(localStorage.getItem("name")){
         //         let a = localStorage.getItem("name");
         //         document.write("Welcome "+ a);
