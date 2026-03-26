@@ -15,7 +15,6 @@ let result3 = users.map((user) => {
   return "Mr "+user.name;
 }
 )
-
 console.log(result);
 console.log(result2);
 console.log(result3);

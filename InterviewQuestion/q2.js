@@ -1,3 +1,7 @@
+// The Double Trouble: You are tasked with writing a function that doubles 
+// each element in an array. However, there's a catch: if the array
+//  contains consecutive duplicate elements, only double one of them.
+
 function arrayDouble(arr){
   let i=0;
   let result =[];
