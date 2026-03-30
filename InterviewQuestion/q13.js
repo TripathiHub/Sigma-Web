@@ -2,28 +2,31 @@
 // to calculate the total cost of items in the shopping cart. Implement a function named 
 // calculateTotal that takes an array of products with prices and quantities and returns 
 // the total cost.
-function sum(a,b){
-    return a+b;
-}
 function calculateTotal(productArray){
-     return productArray.reduce(sum);
+     return productArray.reduce((total,item)=>{
+        return total+ (item.price*item.quantity);
+     },0);
 }
 let product1 = {
     product : "Bike",
-    price : 80000
+    price : 80000,
+    quantity : 1
 }
 let product2 = {
     product : "Fridge",
-    price : 8000
+    price : 8000,
+    quantity : 1
 }
 let product3 = {
     product : "AC",
-    price : 30000
+    price : 30000,
+    quantity : 1
 }
 let product4 = {
     product : "Washing Machine",
-    price : 9000
+    price : 9000,
+    quantity : 1
 }
-let productArray = [product1.price,product2.price,product3.price,product4.price];
+let productArray = [product1,product2,product3,product4];
 let productPriceSum = calculateTotal(productArray);
 console.log(productPriceSum);
